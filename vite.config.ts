@@ -9,7 +9,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/sour-lemon/',
+  base: '/sour-lemon-v1/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
