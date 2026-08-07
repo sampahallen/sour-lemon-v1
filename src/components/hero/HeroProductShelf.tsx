@@ -39,7 +39,7 @@ const products: Product[] = [
     label: 'Signature Custom Cake',
     src: '/images/hero-v2/signature-celebration-cake.png',
     rotate: -1,
-    height: 'h-44 sm:h-60 lg:h-80',
+    height: 'h-44 sm:h-60 lg:h-64',
     grow: 'grow-[2]',
     delay: 0.02,
   },
@@ -74,7 +74,7 @@ export function HeroProductShelf() {
   const prefersReducedMotion = usePrefersReducedMotion()
 
   return (
-    <div className="relative mt-auto flex w-full flex-col items-center gap-6 pb-8 pt-10 lg:gap-8 lg:pb-10">
+    <div className="relative mt-auto flex w-full flex-col items-center gap-6 pb-8 pt-6 lg:gap-6 lg:pb-6">
       <div data-navbar-avoid="true" className="flex w-full items-end gap-1 px-2 sm:gap-2 lg:gap-3">
         {products.map((product, index) => (
           <div

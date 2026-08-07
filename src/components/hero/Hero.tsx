@@ -14,7 +14,7 @@ export function Hero() {
   return (
     <section
       id="home-hero"
-      className="relative -mt-20 flex min-h-[calc(100vh+3.5rem)] flex-col overflow-x-hidden bg-cream md:min-h-[calc(100vh+5rem)] lg:-mt-24 lg:min-h-[calc(100vh+7rem)]"
+      className="relative -mt-20 flex h-[calc(100vh+3.5rem)] flex-col overflow-hidden bg-cream md:h-[calc(100vh+5rem)] lg:-mt-24 lg:h-[calc(100vh+7rem)]"
     >
       <HeroGroovyBackground />
       <HeroDoodles />
