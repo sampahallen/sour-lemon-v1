@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/Button'
 import { fadeInUp, staggerContainer } from '@/utils/motion'
+import { asset } from '@/utils/asset'
 
 type Product = {
   name: string
@@ -71,7 +72,7 @@ export function BestSellers() {
               </span>
               <div className="mx-auto mt-2 aspect-square w-full max-w-[220px]">
                 <img
-                  src={product.image}
+                  src={asset(product.image)}
                   alt={product.name}
                   className="h-full w-full object-contain drop-shadow-[0_18px_14px_rgba(83,48,32,0.18)] transition-transform duration-500 ease-out group-hover:-translate-y-2 group-hover:scale-105"
                   loading="lazy"

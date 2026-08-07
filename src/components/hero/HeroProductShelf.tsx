@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/Button'
 import { usePrefersReducedMotion } from '@/hooks/usePrefersReducedMotion'
 import { slideUpVariant, floatVariant } from '@/utils/motion'
+import { asset } from '@/utils/asset'
 
 type Product = {
   label: string
@@ -99,7 +100,7 @@ export function HeroProductShelf() {
                   variants={prefersReducedMotion ? undefined : floatVariant(7, 4.2 + (index % 3) * 0.6, product.delay + 1.2)}
                 >
                   <img
-                    src={product.src}
+                    src={asset(product.src)}
                     alt={product.label}
                     draggable={false}
                     className={`h-full w-full select-none object-contain object-bottom ${shadow}`}
